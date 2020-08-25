@@ -10,7 +10,7 @@
 # General
 --------------------------------------------------------------*/
 .nav-item{
-  margin: 5px;
+  text-align: center;
 }
 
 body {
@@ -635,14 +635,14 @@ a:hover {
 
 .navbar-default.navbar-trans .nav-item, .navbar-default.navbar-reduce .nav-item {
   position: relative;
-  padding-right: 10px;
+  padding-right: 2px;
   padding-bottom: 8px;
   margin-left: 0;
 }
 
 @media (min-width: 768px) {
   .navbar-default.navbar-trans .nav-item, .navbar-default.navbar-reduce .nav-item {
-    margin-left: 15px;
+    margin-left: 4px;
   }
 }
 
