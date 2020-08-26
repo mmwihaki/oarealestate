@@ -1,16 +1,10 @@
-/**
-* Template Name: EstateAgency - v2.1.0
-* Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 .nav-item{
-  text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 body {
@@ -634,6 +628,7 @@ a:hover {
 }
 
 .navbar-default.navbar-trans .nav-item, .navbar-default.navbar-reduce .nav-item {
+  text-align: center;
   position: relative;
   padding-right: 2px;
   padding-bottom: 8px;
@@ -642,7 +637,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .navbar-default.navbar-trans .nav-item, .navbar-default.navbar-reduce .nav-item {
-    margin-left: 4px;
+    margin-left: 15px;
   }
 }
 
