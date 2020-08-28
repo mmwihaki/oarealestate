@@ -16,6 +16,13 @@ body {
 }
 
 
+#mc_embed_signup{
+  background: transparent;
+  clear: center;
+  font:'Josefin Sans', sans-serif;
+  color: black;
+}
+
 h1,
 h2,
 h3,
