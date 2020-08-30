@@ -27,6 +27,33 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
 
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1166815410348771');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1166815410348771&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+
 </head>
 
 <body>
@@ -40,14 +67,13 @@
         <span></span>
         <span></span>
       </button>
-      <a href="index.html"><img src="assets/img/oareg300.png" alt=""
-          style="height: 28px; width: 230px;"></a>
+      <a href="index.html"><img src="assets/img/oareg300.png" alt="" style="height: 28px; width: 230px;"></a>
       <div class="navbar-collapse collapse" id="navbarDefault">
         <ul class="navbar-nav container justify-content-center">
           <li class="nav-item">
             <a class="nav-link" href="meettheteam.html">Meet The Team</a>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a class="nav-link dropdown-toggle" href="ourlistings.html" id="navbarDropdown" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Properties for Sale</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -247,11 +273,12 @@
             <h4 class="w-header-a" style="text-align: left;">Follow @OARealEstateGroup</h4>
           </a>
           <!-- SnapWidget -->
-<script src="https://snapwidget.com/js/snapwidget.js"></script>
-<iframe src="https://snapwidget.com/embed/867750" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
-          </div>
+          <script src="https://snapwidget.com/js/snapwidget.js"></script>
+          <iframe src="https://snapwidget.com/embed/867750" class="snapwidget-widget" allowtransparency="true"
+            frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
         </div>
       </div>
+    </div>
     </div>
     <div class="container-fluid"
       style="background-color: #546b4e; color: white; padding-top: 20px; padding-bottom: 20px;">
