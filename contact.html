@@ -2,12 +2,27 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179492044-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-179492044-1');
+  </script>
+
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CONTACT OA REAL ESTATE GROUP</title>
+  <title>OA REAL ESTATE GROUP</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
+
 
   <!-- Favicons -->
   <link href="favicon-32x32.ico" rel="icon">
@@ -22,7 +37,8 @@
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
 
   <!-- Facebook Pixel Code -->
   <script>
@@ -51,11 +67,6 @@
       src="https://www.facebook.com/tr?id=1166815410348771&ev=PageView&noscript=1" /></noscript>
   <!-- End Facebook Pixel Code -->
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-
-
 </head>
 
 <body>
@@ -69,7 +80,8 @@
         <span></span>
         <span></span>
       </button>
-      <a href="index.html"><img src="assets/img/oareg300.png" alt="" style="height: 28px; width: 230px;"></a>
+      <a href="index.html"><img src="assets/img/OAGroup_Logo_BlueBlack.png" alt="oa real estate group"
+          style="height: 90px; width: 190px;"></a>
       <div class="navbar-collapse collapse" id="navbarDefault">
         <ul class="navbar-nav container justify-content-center">
           <li class="nav-item">
@@ -86,17 +98,26 @@
               <a class="dropdown-item" href="leases.html">Lease</a>
             </div>
           </li>
-           
+          <li class="nav-item">
+            <a class="nav-link" href="buying.html">Buying</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="selling.html">Selling</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recentsales.html">Recent Sales</a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="inthepress.html">Press</a>
           </li>
-            
-          <li class="nav-item active">
+
+          <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
         </ul>
         <div class="nav-item" style="text-align: center;">
-          <a href="https://findbuyersca.elliman.com/ca.c130952">
+          <a href="myhomevalue.html">
             <button type="button" class="btn" style="background-color: #546b4e;">
               <h6 style="color: white; padding-top: 7px;">Find the Value of My Home</h6>
             </button>
@@ -134,52 +155,68 @@
           <div class="col-sm-12 section-t8">
             <div class="row">
               <div class="col-md-7">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                  <div class="row">
-                    <div class="col-md-6 mb-3">
-                      <div class="form-group">
-                        <input type="text" name="name" class="form-control form-control-lg form-control-a"
-                          placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                        <div class="validate"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <div class="form-group">
-                        <input name="email" type="email" class="form-control form-control-lg form-control-a"
-                          placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                        <div class="validate"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <div class="form-group">
-                        <input type="text" name="subject" class="form-control form-control-lg form-control-a"
-                          placeholder="Subject" data-rule="minlen:4"
-                          data-msg="Please enter at least 8 chars of subject">
-                        <div class="validate"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <textarea name="message" class="form-control" name="message" cols="45" rows="8"
-                          data-rule="required" data-msg="Please write something for us"
-                          placeholder="Message"></textarea>
-                        <div class="validate"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12 mb-3">
-                      <div class="mb-3">
-                        <div class="loading">Loading</div>
-                        <div class="error-message"></div>
-                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                      </div>
-                    </div>
+                <form id="contact-form" method="post" action="contact.php" role="form">
 
-                    <div class="col-md-12 text-center" style="padding-bottom: 20px;">
-                      <button type="submit" class="btn btn-a">Send Message</button>
+                  <div class="messages"></div>
+
+                  <div class="controls">
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_name">Firstname</label>
+                          <input id="form_name" type="text" name="firstname" class="form-control"
+                            placeholder="First Name" required data-error="Firstname is required.">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="form_lastname">Lastname</label>
+                          <input id="form_lastname" type="text" name="surname" class="form-control"
+                            placeholder="Last Name" required data-error="Lastname is required.">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md">
+                        <div class="form-group">
+                          <label for="form_email">Email</label>
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="" required
+                            data-error="Please enter a valid email address">
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label for="form_message">Message</label>
+                          <textarea id="form_message" name="message" class="form-control" placeholder="Leave a message"
+                            rows="4" required data-error="Please, leave us a message."></textarea>
+                          <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <input type="submit" class="btn btn-success btn-send" value="Send Message"
+                          style="background-color: #546b4e; color: white;">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                      </div>
                     </div>
                   </div>
                 </form>
               </div>
+              <br>
+              <br>
+              <br>
               <br>
               <div class="col-md-5 section-md-t3">
                 <div class="icon-box section-b2">
@@ -192,7 +229,7 @@
                     </div>
                     <div class="icon-box-content">
                       <p class="mb-1">Email.
-                        <span class="color-a">hello@oarealestategroup.com</span>
+                        <span class="color-a"><a href="mailto:austin@oarealestategroup.com?subject=Requesting%20a%20Call%20Back" target="_blank" rel="noopener noreferrer" >hello@oarealestategroup.com</a></span>
                       </p>
                       <p class="mb-1">Phone.
                         <span class="color-a">310-853-3931</span>
@@ -276,7 +313,7 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
+   <!-- ======= Footer ======= -->
   <footer style="padding-bottom: 0;">
     <div class="container-fluid"
       style="background-color: #cac2b9; color: white; padding-top: 20px; padding-bottom: 20px;">
@@ -284,30 +321,20 @@
         <div class="col-md">
           <div class="widget-a">
             <div class="w-header-a">
-              <!-- Begin Mailchimp Signup Form -->
               <hr>
-              <div id="mc_embed_signup">
-                <form
-                  action="https://openairhomes.us20.list-manage.com/subscribe/post?u=6a109daec5c61ff6e0ff37e3c&amp;id=002d347108"
-                  method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                  target="_blank" novalidate>
-                  <div id="mc_embed_signup_scroll">
-                    <label for="mce-EMAIL">
-                      <h5 class="w-header-a">Subscribe to our Newsletter</h5>
-                      <p class="w-text-a color-text-a">Subscribe with your email address to receive news and industry
-                        updates.</p>
-                    </label>
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
-                      placeholder="Enter your email address" required>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                        name="b_6a109daec5c61ff6e0ff37e3c_002d347108" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
-                        id="mc-embedded-subscribe" class="button btn" style="background-color: #546b4e;"></div>
-                  </div>
-                </form>
-              </div>
-              <!--End mc_embed_signup-->
+              <form style="padding: 10px;" class="form-a" method="POST" action="newsletter.php" role="form">
+                <div class="form-group">
+                  <label for="exampleInputEmail1" style="color: black; text-align: left;">
+                    Subscribe to our newsletter with your email address to receive news and industry updates.</label>
+                  <input type="email" class="form-control" aria-describedby="emailHelp"
+                    placeholder="Enter email" name="email">
+                  <input type="text" class="form-control" placeholder="Full Name" name="name">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+                </div>
+                <button type="submit" class="btn btn-outline-secondary" name="submit" value="Submit"
+                  style="background-color: #546b4e; color: white;">Submit</button>
+              </form>
             </div>
           </div>
         </div>
@@ -394,8 +421,7 @@
           CHANGES OR WITHDRAWAL WITHOUT NOTICE. ALL PROPERTY INFORMATION, INCLUDING, BUT NOT
           LIMITED TO SQUARE FOOTAGE, ROOM COUNT, NUMBER OF BEDROOMS AND THE SCHOOL DISTRICT IN
           PROPERTY LISTINGS SHOULD BE VERIFIED BY YOUR OWN ATTORNEY, ARCHITECT OR ZONING EXPERT.
-          EQUAL HOUSING OPPORTUNITY. <a><img src="assets/img/fairhousing.png" alt="" height="15px;"
-              width="15px;" /></a>
+          EQUAL HOUSING OPPORTUNITY. <a><img src="assets/img/fairhousing.png" alt="" height="15px;" width="15px;" /></a>
         </p>
       </div>
       <div style="background-color: #546b4e; color: white; padding-top: 0; padding-bottom: 5px;">
@@ -410,9 +436,6 @@
 
   <!-- End  Footer -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="preloader"></div>
-
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -424,46 +447,6 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- Start of LiveChat (www.livechatinc.com) code -->
-  <script>
-    window.__lc = window.__lc || {};
-    window.__lc.license = 11664273;;
-    (function (n, t, c) {
-      function i(n) {
-        return e._h ? e._h.apply(null, n) : e._q.push(n)
-      }
-      var e = {
-        _q: [],
-        _h: null,
-        _v: "2.0",
-        on: function () {
-          i(["on", c.call(arguments)])
-        },
-        once: function () {
-          i(["once", c.call(arguments)])
-        },
-        off: function () {
-          i(["off", c.call(arguments)])
-        },
-        get: function () {
-          if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
-          return i(["get", c.call(arguments)])
-        },
-        call: function () {
-          i(["call", c.call(arguments)])
-        },
-        init: function () {
-          var n = t.createElement("script");
-          n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head
-            .appendChild(n)
-        }
-      };
-      !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
-    }(window, document, [].slice))
-  </script>
-  <noscript><a href="https://www.livechatinc.com/chat-with/11664273/" rel="nofollow">Chat with us</a>, powered by <a
-      href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
-  <!-- End of LiveChat code -->
 
 </body>
 
