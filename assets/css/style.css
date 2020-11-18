@@ -942,7 +942,7 @@ a:hover {
 }
 
 .banner-top {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/washington-bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   background-size: cover;
   background-position: center;
   padding-top: 200px;

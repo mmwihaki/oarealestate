@@ -77,7 +77,11 @@
             <a class="nav-link" href="meettheteam.html">Meet The Team</a>
           </li>
           <li class="nav-item dropdown">
+<<<<<<< HEAD
             <a class="nav-link dropdown-toggle" href="ourlistings.html" id="navbarDropdown" role="button"
+=======
+            <a class="nav-link dropdown-toggle" href="forsale.html" id="navbarDropdown" role="button"
+>>>>>>> 4dae27f752e9c5ccba638ede6c273a9ea1ec96ea
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Properties for Sale</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="forsale.html">For Sale</a>
@@ -256,7 +260,11 @@
                 <h2 class="title-a">Featured Properties</h2>
               </div>
               <div class="title-link">
+<<<<<<< HEAD
                 <a href="ourlistings.html">Properties for Sale
+=======
+                <a href="forsale.html">Properties for Sale
+>>>>>>> 4dae27f752e9c5ccba638ede6c273a9ea1ec96ea
                   <span class="ion-ios-arrow-forward"></span>
                 </a>
               </div>
@@ -682,7 +690,11 @@
             <a href="#">
               <p class="w-text-a color-text-a"> Privacy Policy</p>
             </a>
+<<<<<<< HEAD
             <a href="ourlistings.html">
+=======
+            <a href="forsale.html">
+>>>>>>> 4dae27f752e9c5ccba638ede6c273a9ea1ec96ea
               <p class="w-text-a color-text-a"> Properties for Sale</p>
             </a>
           </div>

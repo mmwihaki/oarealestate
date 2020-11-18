@@ -149,7 +149,10 @@
 [26-Oct-2020 17:45:27 UTC] PHP Notice:  Undefined variable: surname in /home/dih0msl7d3t8/public_html/contact.php on line 39
 [27-Oct-2020 17:20:15 UTC] PHP Notice:  Undefined variable: surname in /home/dih0msl7d3t8/public_html/contact.php on line 39
 [28-Oct-2020 18:08:46 UTC] PHP Notice:  Undefined variable: surname in /home/dih0msl7d3t8/public_html/contact.php on line 39
+<<<<<<< HEAD
 [08-Nov-2020 13:33:02 UTC] PHP Notice:  Undefined variable: surname in /home/dih0msl7d3t8/public_html/contact.php on line 39
 [09-Nov-2020 20:25:44 UTC] PHP Notice:  Undefined variable: surname in /home/dih0msl7d3t8/public_html/contact.php on line 39
 [10-Nov-2020 12:23:27 UTC] PHP Notice:  Undefined variable: surname in /home/dih0msl7d3t8/public_html/contact.php on line 39
 [10-Nov-2020 18:42:15 UTC] PHP Notice:  Undefined variable: surname in /home/dih0msl7d3t8/public_html/contact.php on line 39
+=======
+>>>>>>> 4dae27f752e9c5ccba638ede6c273a9ea1ec96ea
