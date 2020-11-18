@@ -1,8 +1,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
-.nav-item{
+.nav-item {
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -15,11 +14,9 @@ body {
   background-image: url(assets/img/double-bubble-outline.png);
 }
 
-
-#mc_embed_signup{
+#mc_embed_signup {
   background: transparent;
   clear: center;
-  font:'Josefin Sans', sans-serif;
   color: black;
 }
 
@@ -520,50 +517,6 @@ a:hover {
   }
 }
 
-/* Prelaoder */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: #fff;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid #546b4e;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*======================================
 //--//-->   BUTTON
 ======================================*/
@@ -683,11 +636,11 @@ a:hover {
   transform-origin: left;
 }
 
-.navbar-default.navbar-trans .show > .nav-link:before,
-.navbar-default.navbar-trans .active > .nav-link:before,
+.navbar-default.navbar-trans .show>.nav-link:before,
+.navbar-default.navbar-trans .active>.nav-link:before,
 .navbar-default.navbar-trans .nav-link.show:before,
-.navbar-default.navbar-trans .nav-link.active:before, .navbar-default.navbar-reduce .show > .nav-link:before,
-.navbar-default.navbar-reduce .active > .nav-link:before,
+.navbar-default.navbar-trans .nav-link.active:before, .navbar-default.navbar-reduce .show>.nav-link:before,
+.navbar-default.navbar-reduce .active>.nav-link:before,
 .navbar-default.navbar-reduce .nav-link.show:before,
 .navbar-default.navbar-reduce .nav-link.active:before {
   transform: scaleX(1);
@@ -701,8 +654,8 @@ a:hover {
   color: #000000;
 }
 
-.navbar-default.navbar-trans .show > .nav-link,
-.navbar-default.navbar-trans .active > .nav-link,
+.navbar-default.navbar-trans .show>.nav-link,
+.navbar-default.navbar-trans .active>.nav-link,
 .navbar-default.navbar-trans .nav-link.show,
 .navbar-default.navbar-trans .nav-link.active {
   color: #000000;
@@ -726,8 +679,8 @@ a:hover {
   color: #000000;
 }
 
-.navbar-default.navbar-reduce .show > .nav-link,
-.navbar-default.navbar-reduce .active > .nav-link,
+.navbar-default.navbar-reduce .show>.nav-link,
+.navbar-default.navbar-reduce .active>.nav-link,
 .navbar-default.navbar-reduce .nav-link.show,
 .navbar-default.navbar-reduce .nav-link.active {
   color: #000000;
@@ -988,6 +941,37 @@ a:hover {
   background-color: #546b4e;
 }
 
+.banner-top {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/washington-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+}
+
+.banner-top .row {
+  height: 100%;
+}
+
+.banner-form {
+  background: rgba(200, 200, 200, 0.8);
+  padding: 30px;
+  color: black;
+}
+
+.banner-text {
+  background: rgba(84, 107, 78, 0.8);
+  padding: 30px;
+}
+
+.banner-text h1, .banner-text p {
+  color: white;
+}
+
+.btn-green {
+  background-color: #546b4e;
+  color: white;
+}
+
 .intro .intro-item {
   padding-top: 2rem;
 }
@@ -1164,6 +1148,7 @@ a:hover {
 # Card General
 --------------------------------------------------------------*/
 @media (max-width: 767px) {
+
   .card-box-a,
   .card-box-b,
   .card-box-c,
@@ -1173,6 +1158,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+
   .grid .card-box-a,
   .grid .card-box-b,
   .grid .card-box-c,
@@ -1198,6 +1184,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+
   .card-box-a:hover .img-a,
   .card-box-a:hover .img-b,
   .card-box-b:hover .img-a,
@@ -1207,6 +1194,7 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+
   .card-box-a .price-a,
   .card-box-b .price-a {
     font-size: .9rem;
@@ -1214,6 +1202,7 @@ a:hover {
 }
 
 @media (min-width: 992px) {
+
   .card-box-a .price-a,
   .card-box-b .price-a {
     font-size: 1rem;
@@ -1275,6 +1264,7 @@ a:hover {
   .card-box-a .card-overlay-a-content {
     bottom: 65px;
   }
+
   .card-box-a .card-body-a {
     padding-bottom: 1rem;
   }
@@ -2119,6 +2109,7 @@ a:hover {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -2128,6 +2119,7 @@ a:hover {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
