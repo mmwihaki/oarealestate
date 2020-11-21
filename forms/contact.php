@@ -1,41 +1,53 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
-
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'mary@openairhomes.com';
-
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
+if(isset($_POST['email'])) {
+    // CHANGE THE TWO LINES BELOW
+    $email_to = "hello@oarealestategroup.com";
+    $email_subject = "OA REAL ESTATE GROUP CONTACT FORM";
+    function died($error) {
+        // your error code can go here
+        echo "We're sorry, but there's errors found with the form you submitted.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please fix these errors.<br /><br />";
+        die();
+    }
+    // validation expected data exists
+    if(!isset($_POST['firstname']) ||
+        !isset($_POST['surname']) ||
+        !isset($_POST['email']) ||
+        !isset($_POST['message'])) {
+        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+    }
+    $firstname = $_POST['firstname']; // required
+    $suranme = $_POST['surname']; // required
+    $email = $_POST['email']; // required
+    $message = $_POST['message']; // required
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+  if(!preg_match($email_exp,$email)) {
+      $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
   }
-
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
   
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
-
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+  if(strlen($error_message) > 0) {
+      died($error_message);
+  }
+    $email_message = "Form details below.\n\n";
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+    $email_message .= "First Name: ".clean_string($firstname)."\n";
+    $email_message .= "Surname: ".clean_string($surname)."\n";
+    $email_message .= "Email: ".clean_string($email)."\n";
+    $email_message .= "Message: ".clean_string($message)."\n";
+// create email headers
+$headers = 'From: '.$email."\r\n".
+'Reply-To: '.$email."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers); 
+header('Location: contact.html');
 ?>
+<?php
+}
+die();
+?>
+
