@@ -974,6 +974,14 @@ a:hover {
   color: white;
 }
 
+.banner-txt {
+  padding: 150px 0;
+}
+
+.banner-txt h1, .banner-txt p {
+  color: white;
+}
+
 .btn-green {
   background-color: #546b4e;
   color: white;
@@ -1981,6 +1989,37 @@ a:hover {
   display: inline-flex;
   font-size: 1.2rem;
   color: #000000;
+}
+
+/* Neighborhood Guides */
+.neighbourhood-card {
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+.neighbourhood-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.neighbourhood-card .card-body:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.neighbourhood-card .card-body h2, .neighbourhood-card .card-body p {
+  color: white;
+}
+
+.guide-banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*--------------------------------------------------------------
