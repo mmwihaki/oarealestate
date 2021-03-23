@@ -42,9 +42,9 @@
 
   <!-- Facebook Pixel Code -->
   <script>
-    ! function (f, b, e, v, n, t, s) {
+    ! function(f, b, e, v, n, t, s) {
       if (f.fbq) return;
-      n = f.fbq = function () {
+      n = f.fbq = function() {
         n.callMethod ?
           n.callMethod.apply(n, arguments) : n.queue.push(arguments)
       };
@@ -63,8 +63,7 @@
     fbq('init', '1166815410348771');
     fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1166815410348771&ev=PageView&noscript=1" /></noscript>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1166815410348771&ev=PageView&noscript=1" /></noscript>
   <!-- End Facebook Pixel Code -->
 
 </head>
@@ -74,35 +73,33 @@
   <!-- ======= Header/Navbar ======= -->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top bg-light navbar-dark">
     <div class="container-fluid">
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
-        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <a href="index.html"><img src="assets/img/OAGroup_Logo_BlueBlack.png" alt="oa real estate group" style="height: 90px; width: 190px;"></a>
       <div class="navbar-collapse collapse" id="navbarDefault">
-        <ul class="navbar-nav container justify-content-center">
+        <ul class="navbar-nav container">
           <li class="nav-item">
             <a class="nav-link" href="about.html">About Us</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="meettheteam.html">Meet The Team</a>
-          </li>
+          </li> -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="forsale.html" id="navbarDropdown" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Properties for Sale</a>
+            <a class="nav-link dropdown-toggle" href="forsale.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Properties<br>for Sale</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="forsale.html">For Sale</a>
               <a class="dropdown-item" href="leases.html">Lease</a>
             </div>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="buying.html">Buying</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="selling.html">Selling</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="recentsales.html">Recent Sales</a>
           </li>
@@ -111,8 +108,12 @@
             <a class="nav-link" href="inthepress.html">Press</a>
           </li>
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="intheblog.html">Blog</a>
+          </li> -->
+
+          <li class="nav-item">
+            <a class="nav-link" href="investment-properties.html">Investment Properties</a>
           </li>
 
           <li class="nav-item">
@@ -128,7 +129,7 @@
           <div class="navbar-collapse collapse justify-content-center" id="navbarDefault"></div>
         </div>
         <div class="nav-item" style="text-align: center;">
-          <a href="https://www.elliman.com/"><img src="assets/img/DE_Logo_Small_PNG.png" alt=""></a>
+          <a href="https://www.elliman.com/"><img src="assets/img/DE_Logo_Small_PNG.png" alt="" width="150"></a>
           <div class="navbar-collapse collapse justify-content-center" id="navbarDefault"></div>
         </div>
       </div>
@@ -136,6 +137,7 @@
     </div>
   </nav>
   <!-- End Header/Navbar -->
+
 
   <main id="main">
 
@@ -210,10 +212,9 @@
   </main><!-- End #main -->
 
 
-   <!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
   <footer style="padding-bottom: 0;">
-    <div class="container-fluid"
-      style="background-color: #cac2b9; color: white; padding-top: 20px; padding-bottom: 20px;">
+    <div class="container-fluid" style="background-color: #cac2b9; color: white; padding-top: 20px; padding-bottom: 20px;">
       <div class="row">
         <div class="col-md">
           <div class="widget-a">
@@ -223,14 +224,12 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1" style="color: black;">
                     Subscribe to our newsletter with your email address to receive news and industry updates.</label>
-                  <input type="email" class="form-control" aria-describedby="emailHelp"
-                    placeholder="Enter email" name="email">
+                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" name="email">
                   <input type="text" class="form-control" placeholder="Full Name" name="name">
                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
                 </div>
-                <button type="submit" class="btn btn-outline-secondary" name="submit" value="Submit"
-                  style="background-color: #546b4e; color: white;">Submit</button>
+                <button type="submit" class="btn btn-outline-secondary" name="submit" value="Submit" style="background-color: #546b4e; color: white;">Submit</button>
               </form>
             </div>
           </div>
@@ -278,11 +277,6 @@
                   <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </li>
-              <li class="list-inline-item">
-                <a href="#" class="link-one">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-              </li>
             </ul>
           </div>
           <div class="icon-box-content">
@@ -300,18 +294,15 @@
           <!-- LightWidget WIDGET -->
           <!-- SnapWidget -->
           <script src="https://snapwidget.com/js/snapwidget.js"></script>
-          <iframe src="https://snapwidget.com/embed/867750" href="https://www.instagram.com/oarealestategroup/"
-            class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no"
+          <iframe src="https://snapwidget.com/embed/867750" href="https://www.instagram.com/oarealestategroup/" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no"
             style="border:none; overflow:hidden;  width:100%; "></iframe>
         </div>
       </div>
     </div>
     </div>
-    <div class="container-fluid"
-      style="background-color: #546b4e; color: white; padding-top: 20px; padding-bottom: 20px;">
+    <div class="container-fluid" style="background-color: #546b4e; color: white; padding-top: 20px; padding-bottom: 20px;">
       <div>
-        <p
-          style=" text-align: justify; background-color: #546b4e; color: white; padding-top: 0; font-size: 16px; font-weight: 200;">
+        <p style=" text-align: justify; background-color: #546b4e; color: white; padding-top: 0; font-size: 16px; font-weight: 200;">
           150 EL CAMINO DRIVE, LOS ANGELES,CA. 310-595-3888 © 2018 DOUGLAS ELLIMAN REAL ESTATE.
           ALL MATERIAL PRESENTED HEREIN IS INTENDED FOR INFORMATION PURPOSES ONLY. WHILE, THIS
           INFORMATION IS BELIEVED TO BE CORRECT, IT IS REPRESENTED SUBJECT TO ERRORS, OMISSIONS,
@@ -349,7 +340,7 @@
   <script>
     window.__lc = window.__lc || {};
     window.__lc.license = 11664273;;
-    (function (n, t, c) {
+    (function(n, t, c) {
       function i(n) {
         return e._h ? e._h.apply(null, n) : e._q.push(n)
       }
@@ -357,23 +348,23 @@
         _q: [],
         _h: null,
         _v: "2.0",
-        on: function () {
+        on: function() {
           i(["on", c.call(arguments)])
         },
-        once: function () {
+        once: function() {
           i(["once", c.call(arguments)])
         },
-        off: function () {
+        off: function() {
           i(["off", c.call(arguments)])
         },
-        get: function () {
+        get: function() {
           if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
           return i(["get", c.call(arguments)])
         },
-        call: function () {
+        call: function() {
           i(["call", c.call(arguments)])
         },
-        init: function () {
+        init: function() {
           var n = t.createElement("script");
           n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head
             .appendChild(n)
@@ -382,8 +373,7 @@
       !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e
     }(window, document, [].slice))
   </script>
-  <noscript><a href="https://www.livechatinc.com/chat-with/11664273/" rel="nofollow">Chat with us</a>, powered by <a
-      href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+  <noscript><a href="https://www.livechatinc.com/chat-with/11664273/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
   <!-- End of LiveChat code -->
 
 </body>
